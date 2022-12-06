@@ -6,10 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimeNgModule } from './shared/prime-ng/prime-ng.module';
 import { SharedModule } from './shared/shared.module';
+import { VideoComponent } from './components/video/video.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
