@@ -14,8 +14,6 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    background: $color-yellow;
-    color: $color-blue;
     font-weight: 700;
     letter-spacing: 3px;
   }
@@ -29,4 +27,14 @@
       width: 100%;
     }
   }
+}
+
+.class_yellow {
+  background: $color-yellow;
+    color: $color-blue;
+}
+
+.class_blue {
+  background: $color-blue;
+  color: $color-yellow;
 }
