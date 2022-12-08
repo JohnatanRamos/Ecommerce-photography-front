@@ -1,0 +1,17 @@
+@import '/src/styles.scss';
+
+section {
+  background-color: $color-blue;
+}
+
+.content {
+  padding: 40px 20px;
+
+  div {
+    margin-bottom: 30px;
+  }
+}
+
+img {
+  width: 100%;
+}
