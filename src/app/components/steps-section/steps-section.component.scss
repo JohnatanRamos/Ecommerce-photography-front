@@ -1,0 +1,66 @@
+@import '/src/styles.scss';
+
+.section {
+  background-color: $color-blue;
+  color: #fff;
+}
+
+.section-steps {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1055px;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0px;
+  width: 80%;
+  max-width: 291px;
+}
+
+.step p {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.section-steps .step b {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.step-icons {
+  display: block;
+  width: 50px;
+  height: 50px;
+  min-width: 51px;
+}
+
+.step-icon-book {
+  background: url('/assets/icons/paso1.png') center center no-repeat;
+  background-size: 50% auto;
+}
+
+.step-icon-heart {
+  background: url('/assets/icons/paso2.png') center center no-repeat;
+  background-size: 50% auto;
+}
+
+.step-icon-hand {
+  background: url('/assets/icons/paso3.png') center center no-repeat;
+  background-size: 50% auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
