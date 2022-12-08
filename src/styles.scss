@@ -1,5 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+$color-blue: #222E5E;
+$color-yellow: #FAD030;
 
-html, body {
-  font-family: var(--font-family);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+a {
+  text-decoration-line: unset !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 auto;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 14px;
 }
