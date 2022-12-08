@@ -9,7 +9,7 @@ import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -18,6 +18,7 @@ import { SharedModule } from './shared/shared.module';
     SharedModule,
     PrimeNgModule
   ],
+  exports: [SharedModule, PrimeNgModule],
   providers: [],
   bootstrap: [AppComponent]
 })
