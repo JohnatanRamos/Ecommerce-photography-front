@@ -22,13 +22,15 @@ h1 {
     margin: 0;
 
     .btn-comprar {
-      width: 50%;
       border-radius: 50px;
       background-color: $color-yellow;
       color: $color-blue;
       border: none;
       font-weight: bold;
       padding: 20px;
+      font-size: 30px;
+      padding: 15px;
+      font-family: 'Poppins', sans-serif;
     }
   }
 }
