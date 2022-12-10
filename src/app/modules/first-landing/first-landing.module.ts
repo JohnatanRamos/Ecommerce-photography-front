@@ -15,6 +15,7 @@ import { InfoFotosComponent } from './components/info-fotos/info-fotos.component
 import { BuySectionComponent } from './components/buy-section/buy-section.component';
 import { CarouselSectionComponent } from './components/carousel-section/carousel-section.component';
 import { SwiperModule } from 'swiper/angular';
+import { CourseContentSectionComponent } from './components/course-content-section/course-content-section.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SwiperModule } from 'swiper/angular';
     VideoComponent,
     InfoFotosComponent,
     BuySectionComponent,
-    CarouselSectionComponent
+    CarouselSectionComponent,
+    CourseContentSectionComponent
   ],
   imports: [
     CommonModule,
