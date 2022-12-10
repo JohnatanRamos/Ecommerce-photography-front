@@ -1,0 +1,11 @@
+<div class="carousel">
+  <h2>Después de completar este curso, aprenderás a tomar fotos como estas:</h2>
+  <swiper [config]="config" (autoplayStart)="test($event)">
+    <ng-template swiperSlide *ngFor="let item of nameImages">
+      <img
+        [src]="'../../../../../assets/images/carousel/' + item"
+        alt="Imagen 1"
+      />
+    </ng-template>
+  </swiper>
+</div>

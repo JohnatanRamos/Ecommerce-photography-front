@@ -13,6 +13,8 @@ import { PrimeNgModule } from 'src/app/shared/prime-ng/prime-ng.module';
 import { VideoComponent } from './components/video/video.component';
 import { InfoFotosComponent } from './components/info-fotos/info-fotos.component';
 import { BuySectionComponent } from './components/buy-section/buy-section.component';
+import { CarouselSectionComponent } from './components/carousel-section/carousel-section.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { BuySectionComponent } from './components/buy-section/buy-section.compon
     MockupSectionComponent,
     VideoComponent,
     InfoFotosComponent,
-    BuySectionComponent
+    BuySectionComponent,
+    CarouselSectionComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     PrimeNgModule,
-    FirstLandingRoutingModule
+    FirstLandingRoutingModule,
+    SwiperModule
   ]
 })
 export class FirstLandingModule { }
