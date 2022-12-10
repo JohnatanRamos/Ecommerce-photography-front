@@ -1,0 +1,40 @@
+@import '/src/styles.scss';
+
+.buy-button {
+  display: flex;
+  justify-content: center;
+
+  a {
+    justify-content: center;
+    width: 261px;
+    height: 52px;
+    align-self: center;
+    border-radius: 25px;
+    border-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .buy-button {
+    width: 390px;
+
+    a {
+      width: 100%;
+    }
+  }
+}
+
+.class_yellow {
+  background: $color-yellow;
+    color: $color-blue;
+}
+
+.class_blue {
+  background: $color-blue;
+  color: $color-yellow;
+}

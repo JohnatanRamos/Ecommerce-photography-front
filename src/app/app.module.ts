@@ -22,6 +22,7 @@ import { InfoFotosComponent } from './components/info-fotos/info-fotos.component
     SharedModule,
     PrimeNgModule
   ],
+  exports: [SharedModule, PrimeNgModule],
   providers: [],
   bootstrap: [AppComponent]
 })
