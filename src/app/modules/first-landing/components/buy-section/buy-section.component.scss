@@ -21,6 +21,12 @@
 
         p {
             text-align: center;
+            color: $color-blue;
         }
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
     }
 }
