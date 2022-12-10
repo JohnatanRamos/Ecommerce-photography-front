@@ -1,4 +1,4 @@
-@import "/src/variables";
+@import "/src/styles.scss";
 
 h2 {
   color: $color-blue;
@@ -32,4 +32,8 @@ li {
     display: flex;
     justify-content: center;
     padding: 20px;
+}
+
+.info {
+  padding-bottom: 20px;
 }

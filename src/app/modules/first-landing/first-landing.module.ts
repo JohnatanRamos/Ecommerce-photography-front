@@ -12,6 +12,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { PrimeNgModule } from 'src/app/shared/prime-ng/prime-ng.module';
 import { VideoComponent } from './components/video/video.component';
 import { InfoFotosComponent } from './components/info-fotos/info-fotos.component';
+import { BuySectionComponent } from './components/buy-section/buy-section.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InfoFotosComponent } from './components/info-fotos/info-fotos.component
     SummarySectionComponent,
     MockupSectionComponent,
     VideoComponent,
-    InfoFotosComponent
+    InfoFotosComponent,
+    BuySectionComponent
   ],
   imports: [
     CommonModule,

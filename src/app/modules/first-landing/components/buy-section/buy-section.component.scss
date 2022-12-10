@@ -1,0 +1,26 @@
+@import "/src/styles.scss";
+
+.buy-content {
+    background-color: $color-yellow;
+    position: relative;
+    padding-bottom: 10px;
+
+    .icon-image {
+        position: absolute;
+        width: 50px;
+        top: -25px;
+        left: calc(50% - 25px);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text {
+        padding: 30px 30px 10px 30px;
+
+        p {
+            text-align: center;
+        }
+    }
+}
