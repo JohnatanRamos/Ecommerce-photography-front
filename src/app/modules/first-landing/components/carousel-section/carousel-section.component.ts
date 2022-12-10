@@ -24,6 +24,7 @@ export class CarouselSectionComponent implements OnInit {
   config: SwiperOptions = {
     slidesPerView: 1,
     spaceBetween: 10,
+    // navigation: true,
     scrollbar: { draggable: true },
     autoplay: {
       delay: 2000,
