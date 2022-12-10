@@ -10,6 +10,8 @@ import { SummarySectionComponent } from './components/summary-section/summary-se
 import { MockupSectionComponent } from './components/mockup-section/mockup-section.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { PrimeNgModule } from 'src/app/shared/prime-ng/prime-ng.module';
+import { VideoComponent } from './components/video/video.component';
+import { InfoFotosComponent } from './components/info-fotos/info-fotos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PrimeNgModule } from 'src/app/shared/prime-ng/prime-ng.module';
     StepsSectionComponent,
     CardsComponent,
     SummarySectionComponent,
-    MockupSectionComponent
+    MockupSectionComponent,
+    VideoComponent,
+    InfoFotosComponent
   ],
   imports: [
     CommonModule,
