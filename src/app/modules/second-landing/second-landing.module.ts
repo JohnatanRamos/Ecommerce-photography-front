@@ -9,6 +9,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { SecondSectionSummaryComponent } from './components/second-section-summary/second-section-summary.component';
 import { SecondVideoComponent } from './components/second-video/second-video.component';
 import { SecondInfoFotosComponent } from './components/second-info-fotos/second-info-fotos.component';
+import { SecondBuySectionComponent } from './components/second-buy-section/second-buy-section.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SecondInfoFotosComponent } from './components/second-info-fotos/second-
     SecondSectionStepsComponent,
     SecondSectionSummaryComponent,
     SecondVideoComponent,
-    SecondInfoFotosComponent
+    SecondInfoFotosComponent,
+    SecondBuySectionComponent
   ],
   imports: [
     CommonModule,
