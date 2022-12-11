@@ -8,6 +8,7 @@ import { SecondSectionStepsComponent } from './components/second-section-steps/s
 import { SharedModule } from 'src/app/shared/shared.module';
 import { SecondSectionSummaryComponent } from './components/second-section-summary/second-section-summary.component';
 import { SecondVideoComponent } from './components/second-video/second-video.component';
+import { SecondInfoFotosComponent } from './components/second-info-fotos/second-info-fotos.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { SecondVideoComponent } from './components/second-video/second-video.com
     SecondMainSectionComponent,
     SecondSectionStepsComponent,
     SecondSectionSummaryComponent,
-    SecondVideoComponent
+    SecondVideoComponent,
+    SecondInfoFotosComponent
   ],
   imports: [
     CommonModule,
