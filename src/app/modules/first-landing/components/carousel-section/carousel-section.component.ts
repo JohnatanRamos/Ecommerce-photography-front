@@ -20,7 +20,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverfl
   styleUrls: ['./carousel-section.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class CarouselSectionComponent implements OnInit {
+export class CarouselSectionComponent {
   config: SwiperOptions = {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -64,12 +64,4 @@ export class CarouselSectionComponent implements OnInit {
     'IMG_20220614_212221-01.jpeg',
     'IMG_20220614_233856-01.jpeg',
   ];
-
-  constructor() {}
-
-  ngOnInit(): void {}
-
-  test(event: any){
-    console.log(event);
-  }
 }
