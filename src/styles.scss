@@ -1,6 +1,7 @@
 $color-blue: #222E5E;
 $color-yellow: #FAD030;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -19,6 +20,7 @@ a {
 html,
 body {
   height: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -39,6 +41,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-p {
-  font-size: 14px;
+p, li {
+  font-size: 15px;
 }

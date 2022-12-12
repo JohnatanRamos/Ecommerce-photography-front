@@ -10,6 +10,12 @@ import { SummarySectionComponent } from './components/summary-section/summary-se
 import { MockupSectionComponent } from './components/mockup-section/mockup-section.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { PrimeNgModule } from 'src/app/shared/prime-ng/prime-ng.module';
+import { VideoComponent } from './components/video/video.component';
+import { InfoFotosComponent } from './components/info-fotos/info-fotos.component';
+import { BuySectionComponent } from './components/buy-section/buy-section.component';
+import { CarouselSectionComponent } from './components/carousel-section/carousel-section.component';
+import { SwiperModule } from 'swiper/angular';
+import { CourseContentSectionComponent } from './components/course-content-section/course-content-section.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +24,19 @@ import { PrimeNgModule } from 'src/app/shared/prime-ng/prime-ng.module';
     StepsSectionComponent,
     CardsComponent,
     SummarySectionComponent,
-    MockupSectionComponent
+    MockupSectionComponent,
+    VideoComponent,
+    InfoFotosComponent,
+    BuySectionComponent,
+    CarouselSectionComponent,
+    CourseContentSectionComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     PrimeNgModule,
-    FirstLandingRoutingModule
+    FirstLandingRoutingModule,
+    SwiperModule
   ]
 })
 export class FirstLandingModule { }

@@ -1,0 +1,21 @@
+@import '/src/styles.scss';
+
+.course-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-color: $color-blue;
+
+    .h3 {
+        color: $color-yellow;
+        font-weight: bold;
+    }
+
+    p {
+        color: #fff;
+        font-weight: normal;
+    }
+}
