@@ -1,3 +1,5 @@
+@import '/src/styles.scss';
+
 .home{
 	position:relative;
   width:100%;
@@ -23,10 +25,8 @@
 	padding-top:5px;
 	font-weight:500;
 	text-align:center;
-	font-size: 16px;
 	color:#606060;
-  letter-spacing:2px;
-  max-width: 960px;
+  max-width: 306px;
   margin: 0 auto;
 }
 
@@ -35,6 +35,16 @@
   justify-content: center;
   position: relative;
   top: 57%;
+}
+
+h3 {
+  color: $color-blue;
+  line-height: 25px;
+}
+
+mark {
+  background-color: $color-yellow;
+  color: $color-blue;
 }
 
 @media only screen and (min-width: 768px) {
