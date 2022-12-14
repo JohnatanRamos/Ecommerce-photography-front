@@ -10,6 +10,7 @@ import { SecondSectionSummaryComponent } from './components/second-section-summa
 import { SecondVideoComponent } from './components/second-video/second-video.component';
 import { SecondInfoFotosComponent } from './components/second-info-fotos/second-info-fotos.component';
 import { SecondBuySectionComponent } from './components/second-buy-section/second-buy-section.component';
+import { SecondInfoBuySectionComponent } from './components/second-info-buy-section/second-info-buy-section.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SecondBuySectionComponent } from './components/second-buy-section/secon
     SecondSectionSummaryComponent,
     SecondVideoComponent,
     SecondInfoFotosComponent,
-    SecondBuySectionComponent
+    SecondBuySectionComponent,
+    SecondInfoBuySectionComponent
   ],
   imports: [
     CommonModule,
