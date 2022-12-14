@@ -1,7 +1,18 @@
-.container-video {
-
-}
+@import "/src/styles.scss";
 
 .container-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
 
+.desktop {
+    display: none;
+}
+
+
+@media screen and (min-width: 820px) {
+    .container-info {
+        flex-direction: row;
+    }
 }

@@ -38,3 +38,15 @@ h1 {
     }
   }
 }
+
+@media screen and (min-width: 820px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .video {
+      // width: 300px;
+    }
+  }
+}

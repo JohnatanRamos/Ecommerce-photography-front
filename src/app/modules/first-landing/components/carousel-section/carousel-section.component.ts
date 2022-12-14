@@ -22,14 +22,23 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverfl
 })
 export class CarouselSectionComponent {
   config: SwiperOptions = {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    // navigation: true,
+    slidesPerView: 3,
+    // spaceBetween: 10,
+    navigation: true,
     scrollbar: { draggable: true },
     autoplay: {
-      delay: 2000,
+      delay: 5000,
       disableOnInteraction: false
     },
+    effect: 'coverflow',
+    grabCursor: true,
+    coverflowEffect: {
+      // slideShadows: true,
+      // rotate: 15,
+      // stretch: 15,
+      // depth: 5,
+      // modifier: 5
+    }
   };
 
   nameImages = [
