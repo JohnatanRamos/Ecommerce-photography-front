@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./buy-button.component.scss']
 })
 export class BuyButtonComponent {
-  @Input() classButton: 'class_blue' | 'class_yellow' = 'class_yellow';
+  @Input() classButton: 'class_blue' | 'class_yellow' | 'class_blue_color_yellow' = 'class_yellow';
   @Input() nameButton = 'COMPRAR CURSO';
 
 }

@@ -17,7 +17,6 @@
 
 .step {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin: 4px 0px;
   width: 80%;
@@ -25,13 +24,11 @@
 }
 
 .step p {
-  font-size: 12px;
   line-height: 15px;
 }
 
 .section-steps .step b {
   font-weight: bold;
-  font-size: 13px;
 }
 
 .step-icons {
@@ -43,6 +40,7 @@
 
 h3 {
   text-align: center;
+  padding: 30px;
 }
 
 hr {
