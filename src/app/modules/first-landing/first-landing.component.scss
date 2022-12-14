@@ -10,9 +10,34 @@
     display: none;
 }
 
+.container-carousel {
+    display: flex;
+    flex-direction: column;
+}
 
-@media screen and (min-width: 820px) {
+
+@media screen and (min-width: 800px) {
+    .movil {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
     .container-info {
         flex-direction: row;
+    }
+
+    .app-video {
+        width: 30%;
+    }
+
+    .app-info {
+        width: 70%;
+    }
+
+    .container-carousel {
+        flex-direction: column-reverse;
     }
 }

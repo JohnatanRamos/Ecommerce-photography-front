@@ -9,7 +9,7 @@ import SwiperCore, {
   SwiperOptions,
   Autoplay,
   EffectCoverflow
-} from 'swiper';
+} from "swiper";
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverflow]);
