@@ -1,43 +1,45 @@
 @import "/src/styles.scss";
 
 .container-info {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .desktop {
-    display: none;
+  display: none;
 }
 
 .container-summary {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-
 @media screen and (min-width: 800px) {
-    .movil {
-        display: none;
-    }
+  .movil {
+    display: none;
+  }
 
-    .desktop {
-        display: block;
-    }
+  .desktop {
+    display: block;
+  }
 
-    .container-info {
-        flex-direction: row;
-    }
+  .container-info {
+    flex-direction: row;
+  }
 
-    .app-video {
-        width: 30%;
-    }
+  .app-video {
+    width: 35%;
+    margin: 50px;
+  }
 
-    .app-info {
-        width: 70%;
-    }
+  .app-info {
+    width: 65%;
+    margin: 50px;
+    margin-left: 0;
+  }
 
-    .container-summary {
-        flex-direction: column-reverse;
-    }
+  .container-summary {
+    flex-direction: column-reverse;
+  }
 }
