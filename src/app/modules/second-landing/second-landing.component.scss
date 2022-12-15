@@ -1,0 +1,43 @@
+@import "/src/styles.scss";
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.desktop {
+    display: none;
+}
+
+.container-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 800px) {
+    .movil {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .container-info {
+        flex-direction: row;
+    }
+
+    .app-video {
+        width: 30%;
+    }
+
+    .app-info {
+        width: 70%;
+    }
+
+    .container-summary {
+        flex-direction: column-reverse;
+    }
+}

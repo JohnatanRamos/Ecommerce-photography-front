@@ -1,6 +1,50 @@
+@import "/src/styles.scss";
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.desktop {
+  display: none;
+}
+
+.container-carousel {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 840px) {
   .mockup-summary {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .movil {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .container-info {
+    flex-direction: row;
+  }
+
+  .app-video {
+    width: 30%;
+  }
+
+  .app-info {
+    width: 70%;
+  }
+
+  .container-carousel {
+    flex-direction: column-reverse;
   }
 }

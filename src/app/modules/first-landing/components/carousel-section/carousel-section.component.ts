@@ -9,7 +9,7 @@ import SwiperCore, {
   SwiperOptions,
   Autoplay,
   EffectCoverflow
-} from 'swiper';
+} from "swiper";
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverflow]);
@@ -23,13 +23,21 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverfl
 export class CarouselSectionComponent {
   config: SwiperOptions = {
     slidesPerView: 1,
-    spaceBetween: 10,
-    // navigation: true,
+    // spaceBetween: 10,
+    navigation: true,
     scrollbar: { draggable: true },
     autoplay: {
-      delay: 2000,
+      delay: 5000,
       disableOnInteraction: false
     },
+    effect: 'coverflow',
+    breakpoints: {
+      582: {
+        slidesPerView: 3,
+      }
+    }
+
+
   };
 
   nameImages = [
