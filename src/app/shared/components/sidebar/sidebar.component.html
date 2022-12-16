@@ -1,0 +1,33 @@
+<p-sidebar [(visible)]="visibleSidebar" position="right" styleClass="sidebar-menu" [baseZIndex]="10000"
+  [dismissible]="true" (onHide)="handleCloseSidebar()">
+  <ng-template pTemplate="content">
+    <nav>
+      <ul>
+        <li>
+          <div class="nav-logo"><img src="assets/images/logo_footer.png" alt="Logo"></div>
+        </li>
+        <li>
+          <a href="#mentoria" class="scroll">Introduccion</a>
+        </li>
+        <li>
+          <a href="#etapas" class="scroll">Beneficios</a>
+        </li>
+        <li>
+          <a href="#proposito" class="scroll">Fotos</a>
+        </li>
+        <li>
+          <a href="#asesoria" class="scroll">Contenido del curso</a>
+        </li>
+        <li>
+          <a href="#contacto" class="scroll">VILEAN</a>
+        </li>
+        <li>
+          <a href="#asesoria" class="scroll">Descuento</a>
+        </li>
+        <li>
+          <a href="#contacto" class="scroll">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </ng-template>
+</p-sidebar>

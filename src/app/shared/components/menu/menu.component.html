@@ -1,5 +1,8 @@
 <header>
 
   <span class="icon-logo"></span>
-
+  <button pButton pRipple type="button" icon="pi pi-bars" (click)="visibleSidebar = true"
+     class="p-button-rounded p-button-text button-menu"></button>
 </header>
+
+<app-sidebar [visibleSidebar]="visibleSidebar" (emitCloseSidebar)="visibleSidebar = $event"></app-sidebar>

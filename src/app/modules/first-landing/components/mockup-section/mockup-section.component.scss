@@ -20,3 +20,14 @@ app-buy-button {
   display: flex;
   justify-content: center;
 }
+
+p {
+  color: white;
+}
+
+.content-paragraph {
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

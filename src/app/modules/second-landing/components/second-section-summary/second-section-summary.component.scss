@@ -1,5 +1,19 @@
-@import '/styles/summary-section.scss';
+@import '/src/styles.scss';
 
-.app-button ::ng-deep.buy-button a{
-  width: 290px !important;
+section {
+  background-color: $color-blue;
+}
+
+.content-paragraph {
+  padding: 40px 35px;
+
+  div {
+    font-size: 15px;
+    color: white;
+  }
+
+}
+
+.content-paragraph div:first-child {
+  margin-bottom: 20px;
 }
