@@ -6,27 +6,11 @@
         <li>
           <div class="nav-logo"><img src="assets/images/logo_footer.png" alt="Logo"></div>
         </li>
-        <li>
-          <a href="#mentoria" class="scroll">Introduccion</a>
-        </li>
-        <li>
-          <a href="#etapas" class="scroll">Beneficios</a>
-        </li>
-        <li>
-          <a href="#proposito" class="scroll">Fotos</a>
-        </li>
-        <li>
-          <a href="#asesoria" class="scroll">Contenido del curso</a>
-        </li>
-        <li>
-          <a href="#contacto" class="scroll">VILEAN</a>
-        </li>
-        <li>
-          <a href="#asesoria" class="scroll">Descuento</a>
-        </li>
-        <li>
-          <a href="#contacto" class="scroll">Contacto</a>
-        </li>
+        <ng-container *ngFor="let item of menu">
+          <li>
+            <a [href]="item.href" class="scroll">{{ item.title }}</a>
+          </li>
+        </ng-container>
       </ul>
     </nav>
   </ng-template>

@@ -16,6 +16,7 @@ import { CarouselSectionComponent } from './components/carousel-section/carousel
 import { SwiperModule } from 'swiper/angular';
 import { CourseContentSectionComponent } from './components/course-content-section/course-content-section.component';
 import { InfoBuySectionComponent } from './components/info-buy-section/info-buy-section.component';
+import { TravelKitComponent } from './components/travel-kit/travel-kit.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { InfoBuySectionComponent } from './components/info-buy-section/info-buy-
     BuySectionComponent,
     CarouselSectionComponent,
     CourseContentSectionComponent,
-    InfoBuySectionComponent
+    InfoBuySectionComponent,
+    TravelKitComponent
   ],
   imports: [
     CommonModule,

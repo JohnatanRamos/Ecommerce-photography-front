@@ -3,19 +3,30 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: "",
+    path: '',
     loadChildren: () =>
-      import("./modules/first-landing/first-landing.module").then((m) => m.FirstLandingModule),
+      import('./modules/first-landing/first-landing.module').then(
+        (m) => m.FirstLandingModule
+      ),
   },
   {
-    path: "free-landing",
+    path: 'free-landing',
     loadChildren: () =>
-      import("./modules/second-landing/second-landing.module").then((m) => m.SecondLandingModule),
+      import('./modules/second-landing/second-landing.module').then(
+        (m) => m.SecondLandingModule
+      ),
+  },
+  {
+    path: '**',
+    loadChildren: () =>
+      import('./modules/first-landing/first-landing.module').then(
+        (m) => m.FirstLandingModule
+      ),
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
