@@ -26,7 +26,7 @@ export class SecondLandingComponent implements OnInit {
     title: 'Formulario'
   },
   {
-    href: '',
+    href: 'contact',
     title: 'Contacto'
   }];
 
