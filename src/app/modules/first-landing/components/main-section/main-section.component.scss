@@ -52,3 +52,17 @@ mark {
     padding-top: 100px;
   }
 }
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    color: white;
+    margin-bottom: 20px!important;
+    text-align: center;
+  }
+}

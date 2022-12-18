@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { BaseService } from 'src/app/core/base.service';
 import { extensiones } from '../../../../constants/extensiones';
 
 @Component({
@@ -11,7 +12,10 @@ export class FormInfoComponent implements OnInit {
   formContacto!: FormGroup;
   arrayExtensiones = extensiones;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(
+    private formBuilder: FormBuilder,
+    private baseService: BaseService
+  ) {
     this.buildForm();
   }
 
@@ -48,6 +52,13 @@ export class FormInfoComponent implements OnInit {
       return true;
     }
 
-    return false
+    return false;
+  }
+
+  sendEmail() {
+    this.baseService.postMethod('users', this.formContacto.value).subscribe({
+      next: () => { console.log('enviado') },
+      error: () => { console.error('Error') }
+    })
   }
 }

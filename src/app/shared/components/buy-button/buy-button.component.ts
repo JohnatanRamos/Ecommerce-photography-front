@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-buy-button',
@@ -8,5 +8,9 @@ import { Component, Input } from '@angular/core';
 export class BuyButtonComponent {
   @Input() classButton: 'class_blue' | 'class_yellow' | 'class_blue_color_yellow' = 'class_yellow';
   @Input() nameButton = 'COMPRAR CURSO';
+  @Output() emitClick = new EventEmitter();
 
+  handelClick() {
+    this.emitClick.emit();
+  }
 }

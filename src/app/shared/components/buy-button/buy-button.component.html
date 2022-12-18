@@ -1,3 +1,3 @@
 <div class="buy-button">
-  <a [ngClass]="classButton" href="#list">{{nameButton | uppercase}}</a>
+  <a [ngClass]="classButton" (click)="handelClick()">{{nameButton | uppercase}}</a>
 </div>

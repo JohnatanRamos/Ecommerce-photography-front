@@ -13,8 +13,6 @@ import { SecondBuySectionComponent } from './components/second-buy-section/secon
 import { SecondInfoBuySectionComponent } from './components/second-info-buy-section/second-info-buy-section.component';
 import { FormInfoComponent } from './components/form-info/form-info.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgSelectModule } from '@ng-select/ng-select';
-
 
 @NgModule({
   declarations: [
@@ -33,8 +31,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
     SecondLandingRoutingModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule,
-    NgSelectModule
+    ReactiveFormsModule
   ]
 })
 export class SecondLandingModule { }
