@@ -1,0 +1,106 @@
+<section class="content-form" id="contacto">
+  <div class="container">
+    <p>Registrate y recibe nuestra guía</p>
+    <p>gratuita de</p>
+    <p class="max"><mark>5 TRUCOS</mark> PARA TOMAR</p>
+    <p class="max margin">MEJORES FOTOS</p>
+
+    <form [formGroup]="formContacto">
+      <div class="form-col">
+        <input
+          class="form-input"
+          formControlName="nombre"
+          type="text"
+          placeholder="Nombre"
+          [ngClass]="{ 'input-error': validateInput('nombre') }"
+        />
+        <span
+          class="error"
+          *ngIf="
+            formContacto.controls['nombre'].invalid &&
+            formContacto.controls['nombre'].touched
+          "
+        >
+          Debe llenar el nombre
+        </span>
+      </div>
+
+      <div class="form-col">
+        <div class="celular">
+          <input
+            class="form-input indicativo"
+            formControlName="indicativo"
+            type="text"
+            placeholder="Indic."
+            [ngClass]="{ 'input-error': validateInput('indicativo') }"
+          />
+
+          <input
+            class="form-input phone"
+            formControlName="celular"
+            type="text"
+            placeholder="Celular"
+            [ngClass]="{ 'input-error': validateInput('celular') }"
+          />
+        </div>
+
+        <span class="error" *ngIf="validateCelIndicativo()">
+          Debe llenar el celular y el indicativo
+        </span>
+      </div>
+
+      <div class="form-col">
+        <input
+          class="form-input"
+          email="true"
+          formControlName="correo"
+          type="email"
+          placeholder="Correo"
+          [ngClass]="{ 'input-error': validateInput('correo') }"
+        />
+        <span
+          class="error"
+          *ngIf="
+            formContacto.controls['correo'].hasError('required') &&
+            formContacto.controls['correo'].touched
+          "
+        >
+          Debe llenar el correo
+        </span>
+
+        <span
+          class="error"
+          *ngIf="formContacto.controls['correo'].hasError('email')"
+        >
+          El correo no es valido
+        </span>
+      </div>
+
+      <div class="form-col check">
+        <input
+          type="checkbox"
+          class="check-autoriza"
+          formControlName="autoriza"
+        />
+        <p>Autorizo el tratamiento de datos personales</p>
+      </div>
+    </form>
+
+    <div class="button">
+      <app-buy-button
+        class="app-button"
+        classButton="class_blue_color_yellow"
+        nameButton="Conocer los 5 trucos"
+      ></app-buy-button>
+    </div>
+
+    <hr />
+
+    <p>Si quieres saber más a cerca de</p>
+    <p class="mb">fotografía para viajes, mira esto...</p>
+
+    <div class="curso_completo">
+      <button class="btn-completo">CURSO COMPLETO</button>
+    </div>
+  </div>
+</section>

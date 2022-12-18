@@ -11,6 +11,9 @@ import { SecondVideoComponent } from './components/second-video/second-video.com
 import { SecondInfoFotosComponent } from './components/second-info-fotos/second-info-fotos.component';
 import { SecondBuySectionComponent } from './components/second-buy-section/second-buy-section.component';
 import { SecondInfoBuySectionComponent } from './components/second-info-buy-section/second-info-buy-section.component';
+import { FormInfoComponent } from './components/form-info/form-info.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
@@ -22,12 +25,16 @@ import { SecondInfoBuySectionComponent } from './components/second-info-buy-sect
     SecondVideoComponent,
     SecondInfoFotosComponent,
     SecondBuySectionComponent,
-    SecondInfoBuySectionComponent
+    SecondInfoBuySectionComponent,
+    FormInfoComponent
   ],
   imports: [
     CommonModule,
     SecondLandingRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgSelectModule
   ]
 })
 export class SecondLandingModule { }

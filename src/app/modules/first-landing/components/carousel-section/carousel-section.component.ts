@@ -23,17 +23,16 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverfl
 export class CarouselSectionComponent {
   config: SwiperOptions = {
     slidesPerView: 1,
-    // spaceBetween: 10,
+    spaceBetween: 10,
     navigation: true,
     scrollbar: { draggable: true },
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
     },
-    effect: 'coverflow',
     breakpoints: {
       582: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       }
     }
 

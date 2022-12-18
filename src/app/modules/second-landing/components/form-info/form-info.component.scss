@@ -1,0 +1,149 @@
+@import "/src/styles.scss";
+
+.content-form {
+  padding: 40px;
+
+  .container {
+
+  p {
+    text-align: center;
+    color: rgb(99, 98, 98);
+  }
+
+  .max {
+    font-size: 22px;
+    font-weight: bold;
+    color: $color-blue;
+  }
+
+  mark {
+    background-color: $color-blue;
+    color: $color-yellow;
+  }
+
+  .margin {
+    margin-bottom: 40px !important;
+  }
+
+  .form-col {
+    width: 100%;
+    margin-bottom: 25px;
+
+    .form-input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid rgb(99, 98, 98);
+      color: rgb(99, 98, 98);
+      font-size: 20px;
+      padding-bottom: 10px;
+      font-family: "Poppins", sans-serif;
+      outline: none;
+    }
+
+    .form-input:active {
+      border-bottom: 1px solid rgb(99, 98, 98);
+    }
+
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+
+    .input-error {
+      border-color: red;
+    }
+
+    .input-error::placeholder {
+      color: red;
+    }
+  }
+  }
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2px;
+
+  p {
+    font-size: 12px;
+  }
+}
+
+.check-autoriza {
+  width: 13px;
+  height: 13px;
+  border-radius: 0px;
+  display: inline-block;
+}
+
+.celular {
+  display: flex;
+  padding-bottom: 5px;
+  gap: 10px;
+
+  .indicativo {
+    width: 30%!important;
+  }
+
+  .phone {
+    width: calc(70% - 10px);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.app-button ::ng-deep.buy-button a {
+  width: 290px !important;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+hr {
+  margin: 0 auto;
+  color: rgb(99, 98, 98);
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+.curso_completo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btn-completo {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: rgb(99, 98, 98);
+    border: 2px solid rgb(99, 98, 98);
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 60%;
+  }
+
+  .check {
+    p {
+      font-size: 16px;
+    }
+  }
+}
