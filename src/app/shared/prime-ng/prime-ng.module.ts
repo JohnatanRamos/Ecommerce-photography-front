@@ -9,6 +9,7 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { SidebarModule } from 'primeng/sidebar';
 import { ToastModule } from 'primeng/toast';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @NgModule({
   exports: [
@@ -19,7 +20,8 @@ import { ToastModule } from 'primeng/toast';
     ButtonModule,
     CardModule,
     SidebarModule,
-    ToastModule
+    ToastModule,
+    ProgressSpinnerModule
   ],
 })
 export class PrimeNgModule {}

@@ -14,6 +14,7 @@ import { SecondInfoBuySectionComponent } from './components/second-info-buy-sect
 import { FormInfoComponent } from './components/form-info/form-info.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrimeNgModule } from 'src/app/shared/prime-ng/prime-ng.module';
+import { InfoCursoCompletoComponent } from './components/info-curso-completo/info-curso-completo.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PrimeNgModule } from 'src/app/shared/prime-ng/prime-ng.module';
     SecondInfoFotosComponent,
     SecondBuySectionComponent,
     SecondInfoBuySectionComponent,
-    FormInfoComponent
+    FormInfoComponent,
+    InfoCursoCompletoComponent
   ],
   imports: [
     CommonModule,
