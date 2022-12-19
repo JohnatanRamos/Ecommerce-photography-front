@@ -13,6 +13,7 @@ import { SecondBuySectionComponent } from './components/second-buy-section/secon
 import { SecondInfoBuySectionComponent } from './components/second-info-buy-section/second-info-buy-section.component';
 import { FormInfoComponent } from './components/form-info/form-info.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PrimeNgModule } from 'src/app/shared/prime-ng/prime-ng.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SecondLandingRoutingModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PrimeNgModule
   ]
 })
 export class SecondLandingModule { }

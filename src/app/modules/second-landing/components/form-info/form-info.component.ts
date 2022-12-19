@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MessageService } from 'primeng/api';
 import { BaseService } from 'src/app/core/base.service';
 import { extensiones } from '../../../../constants/extensiones';
 
@@ -7,6 +8,7 @@ import { extensiones } from '../../../../constants/extensiones';
   selector: 'app-form-info',
   templateUrl: './form-info.component.html',
   styleUrls: ['./form-info.component.scss'],
+  providers: [MessageService],
 })
 export class FormInfoComponent implements OnInit {
   formContacto!: FormGroup;
@@ -14,7 +16,8 @@ export class FormInfoComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private baseService: BaseService
+    private baseService: BaseService,
+    private messageService: MessageService
   ) {
     this.buildForm();
   }
@@ -26,7 +29,7 @@ export class FormInfoComponent implements OnInit {
       nombre: ['', Validators.required],
       celular: ['', Validators.required],
       indicativo: ['57', Validators.required],
-      correo: ['', Validators.required, Validators.email],
+      correo: ['', [Validators.required, Validators.email]],
       autoriza: [false, Validators.required],
     });
   }
@@ -56,9 +59,41 @@ export class FormInfoComponent implements OnInit {
   }
 
   sendEmail() {
+    if (
+      this.formContacto.invalid ||
+      this.formContacto.controls['autoriza'].value === false
+    ) {
+      this.messageError('Debe llenar los campos correctamente');
+      return;
+    }
+
     this.baseService.postMethod('users', this.formContacto.value).subscribe({
-      next: () => { console.log('enviado') },
-      error: () => { console.error('Error') }
-    })
+      next: () => {
+        this.messageSuccess(
+          'Información enviada correctamente, te llkegará un mensaje al correo que diligenciaste'
+        );
+      },
+      error: (err) => {
+        this.messageError(err.message)
+      },
+    });
+  }
+
+  messageError(message: string) {
+    this.messageService.add({
+      key: 'alert',
+      severity: 'error',
+      summary: 'historiaenlinea dice:',
+      detail: message,
+    });
+  }
+
+  messageSuccess(message: string) {
+    this.messageService.add({
+      key: 'alert',
+      severity: 'success',
+      summary: 'historiaenlinea dice:',
+      detail: message,
+    });
   }
 }

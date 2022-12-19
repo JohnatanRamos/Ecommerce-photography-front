@@ -38,7 +38,7 @@
           <input
             class="form-input phone"
             formControlName="celular"
-            type="text"
+            type="number"
             placeholder="Celular"
             [ngClass]="{ 'input-error': validateInput('celular') }"
           />
@@ -105,3 +105,11 @@
     </div>
   </div>
 </section>
+
+<p-toast
+  key="alert"
+  [position]="'top-left'"
+  [showTransitionOptions]="'0ms'"
+  [hideTransitionOptions]="'0ms'"
+>
+</p-toast>

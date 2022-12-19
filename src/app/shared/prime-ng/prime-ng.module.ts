@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 
 // Modulos PRIMENG
-import {MessagesModule} from 'primeng/messages';
-import {MessageModule} from 'primeng/message';
-import {MenubarModule} from 'primeng/menubar';
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
+import { MenubarModule } from 'primeng/menubar';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { SidebarModule } from 'primeng/sidebar';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   exports: [
@@ -17,7 +18,8 @@ import { SidebarModule } from 'primeng/sidebar';
     DialogModule,
     ButtonModule,
     CardModule,
-    SidebarModule
-  ]
+    SidebarModule,
+    ToastModule
+  ],
 })
-export class PrimeNgModule { }
+export class PrimeNgModule {}
