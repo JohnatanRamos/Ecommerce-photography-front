@@ -13,6 +13,10 @@
   height: 100%;
 }
 
+.content-paragraph {
+  height: 100%;
+}
+
 .slider-text{
   padding-top: 78px;
   margin: 0 auto;
@@ -25,7 +29,7 @@
 	padding-top:5px;
 	font-weight:500;
 	text-align:center;
-	color:#606060;
+	color: $color-blue;
   max-width: 306px;
   margin: 0 auto;
 }
@@ -47,13 +51,6 @@ mark {
   color: $color-blue;
 }
 
-@media only screen and (min-width: 768px) {
-  .slider-text{
-    padding-top: 100px;
-  }
-}
-
-
 .button {
   display: flex;
   justify-content: center;
@@ -64,5 +61,58 @@ mark {
     color: white;
     margin-bottom: 20px!important;
     text-align: center;
+  }
+}
+
+.icon-image {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .slider-text{
+    padding-top: 100px;
+  }
+
+  .content-image {
+    background: url('../../../../../assets/images/foto_portada.jpg') no-repeat center center;
+    background-size: cover;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    margin-right: 0px;
+  }
+
+  .content-title {
+    display: flex;
+    background-image: none;
+  }
+
+  .content-paragraph {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: 0px;
+    margin-top: -60px;
+  }
+
+  .button p {
+    color: #6d6e71;
+  }
+
+  .content-button {
+    top: 8%;
+  }
+
+  .icon-image {
+    display: block;
+    position: relative;
+    top: 12%;
+
+    img {
+      width: 70px;
+    }
   }
 }

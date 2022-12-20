@@ -53,18 +53,19 @@
 @media only screen and (min-width: 1066px) {
   .content-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
+    column-gap: 10px;
   }
 
   ::ng-deep .p-card {
     display: grid;
-    min-height: 183px;
+    min-height: 180px;
   }
 }
 
 @media only screen and (min-width: 1234px) {
   ::ng-deep .p-card {
-    max-width: 370px !important;
+    max-width: 280px !important;
   }
 }

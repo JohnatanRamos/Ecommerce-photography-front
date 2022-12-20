@@ -73,8 +73,28 @@ p {
 .app-button ::ng-deep.buy-button a{
   width: 290px !important;
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 390px) and (max-width: 659px) {
+  .content-button {
+    top: 25%;
+  }
+}
+
+@media only screen and (min-width: 659px) {
   .slider-text{
     padding-top: 100px;
+  }
+
+  .content-title {
+    background: url('../../../../../assets/images/foto_portada2_escritorio.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  .subtitle {
+    max-width: 582px;
+  }
+
+  .max-width {
+    max-width: 420px;
   }
 }
