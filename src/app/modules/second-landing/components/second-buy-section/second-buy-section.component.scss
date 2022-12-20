@@ -3,3 +3,27 @@
 .app-button ::ng-deep.buy-button a {
   width: 290px !important;
 }
+
+.text-desktop {
+  display: none;
+  padding: 30px 30px 20px 30px;
+
+  p {
+    text-align: center;
+    color: $color-blue;
+  }
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .text, .movil {
+    display: none;
+  }
+
+  .text-desktop, .desktop {
+    display: block;
+  }
+}

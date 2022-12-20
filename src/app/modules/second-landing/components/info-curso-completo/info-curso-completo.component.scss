@@ -14,6 +14,10 @@ hr {
   }
 }
 
+.desktop {
+  display: none;
+}
+
 .curso_completo {
   display: flex;
   justify-content: center;
@@ -30,5 +34,15 @@ hr {
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .movil {
+    display: none;
+  }
+
+  .desktop{
+    display: block;
   }
 }
