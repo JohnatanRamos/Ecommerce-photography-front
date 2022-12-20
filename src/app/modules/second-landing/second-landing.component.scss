@@ -15,6 +15,11 @@
   flex-direction: column;
 }
 
+.container-curso {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 800px) {
   .movil {
     display: none;
@@ -41,5 +46,17 @@
 
   .container-summary {
     flex-direction: column-reverse;
+  }
+
+  .container-curso {
+    flex-direction: row;
+
+    .app-summary {
+      width: 50%;
+    }
+
+    .app-form-info {
+      width: 50%;
+    }
   }
 }
