@@ -15,6 +15,17 @@
   flex-direction: column;
 }
 
+.text-info {
+  display: block;
+}
+
+@media only screen and (min-width: 840px) {
+  .mockup-summary {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
 
 @media screen and (min-width: 800px) {
   .movil {
@@ -27,20 +38,27 @@
 
   .container-info {
     flex-direction: row;
+    background-color: $color-blue;
   }
 
   .app-video {
-    width: 35%;
+    width: 50%;
     margin: 50px;
+    margin-bottom: 0;
   }
 
   .app-info {
-    width: 65%;
+    width: 40%;
     margin: 50px;
     margin-left: 0;
+    margin-bottom: 0;
   }
 
   .container-carousel {
     flex-direction: column-reverse;
+  }
+
+  .text-info {
+    display: none;
   }
 }

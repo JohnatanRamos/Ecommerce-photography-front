@@ -1,1 +1,20 @@
 @import "/styles/info-buy-section.scss";
+
+.info-comprar {
+  padding-bottom: 0;
+}
+
+.text-info {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  .text-info {
+    display: none;
+  }
+
+  .info-comprar {
+    padding-bottom: 60px;
+    padding-top: 0;
+  }
+}

@@ -38,7 +38,7 @@
           <input
             class="form-input phone"
             formControlName="celular"
-            type="text"
+            type="number"
             placeholder="Celular"
             [ngClass]="{ 'input-error': validateInput('celular') }"
           />
@@ -94,14 +94,14 @@
         (emitClick)="sendEmail()"
       ></app-buy-button>
     </div>
-
-    <hr />
-
-    <p>Si quieres saber más a cerca de</p>
-    <p class="mb">fotografía para viajes, mira esto...</p>
-
-    <div class="curso_completo">
-      <button class="btn-completo">CURSO COMPLETO</button>
-    </div>
   </div>
 </section>
+
+<p-toast
+  key="alert"
+  [position]="'top-right'"
+  [showTransitionOptions]="'0ms'"
+  [hideTransitionOptions]="'0ms'"
+  class="toast"
+>
+</p-toast>

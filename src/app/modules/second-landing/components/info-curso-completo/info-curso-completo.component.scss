@@ -1,0 +1,48 @@
+@import "/src/styles.scss";
+
+hr {
+  margin: 0 auto;
+  color: $color-gray;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+.container-curso-completo {
+  p {
+    text-align: center;
+    color: $color-gray;
+  }
+}
+
+.desktop {
+  display: none;
+}
+
+.curso_completo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+  a{
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: $color-gray;
+    border: 2px solid $color-gray;
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .movil {
+    display: none;
+  }
+
+  .desktop{
+    display: block;
+  }
+}

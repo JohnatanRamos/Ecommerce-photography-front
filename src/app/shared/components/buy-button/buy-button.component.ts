@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class BuyButtonComponent {
   @Input() classButton: 'class_blue' | 'class_yellow' | 'class_blue_color_yellow' = 'class_yellow';
   @Input() nameButton = 'COMPRAR CURSO';
+  @Input() load = false;
   @Output() emitClick = new EventEmitter();
 
   handelClick() {

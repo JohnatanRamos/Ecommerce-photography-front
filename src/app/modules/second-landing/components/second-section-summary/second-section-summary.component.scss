@@ -2,10 +2,18 @@
 
 section {
   background-color: $color-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-paragraph {
   padding: 40px 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   div {
     font-size: 15px;
@@ -16,4 +24,20 @@ section {
 
 .content-paragraph div:first-child {
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  section {
+    height: 100%;
+    background-color: white;
+  }
+
+  .content-paragraph {
+    width: 60%;
+    height: 100%;
+
+    div {
+      color: $color-blue;
+    }
+  }
 }
