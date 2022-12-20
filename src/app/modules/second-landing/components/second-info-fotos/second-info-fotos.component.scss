@@ -1,1 +1,28 @@
 @import "/styles/info-fotos.scss";
+
+.app-button {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .app-button {
+    display: block;
+  }
+
+  .container-info {
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+
+  p, li, li::before {
+    color: white;
+  }
+
+  h3 {
+    color: $color-yellow;
+  }
+
+  ul {
+    margin-bottom: 30px;
+  }
+}
