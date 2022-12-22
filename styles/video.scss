@@ -19,10 +19,9 @@ h1 {
 @media screen and (min-width: 800px) {
   .container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     height: 100%;
-    align-items: center;
+    align-items: flex-end;
     padding: 0;
 
     .video {
