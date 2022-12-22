@@ -43,3 +43,20 @@ p {
     text-align: center;
   }
 }
+
+@media only screen and (min-width: 675px) {
+  .content-image-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .content-image-paragraph div:first-child {
+    max-width: 347px
+  }
+
+  .content-paragraph {
+    max-width: 397px;
+  }
+}
