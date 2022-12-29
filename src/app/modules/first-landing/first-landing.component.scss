@@ -39,19 +39,16 @@
   .container-info {
     flex-direction: row;
     background-color: $color-blue;
+    padding: 0 80px;
   }
 
   .app-video {
     width: 50%;
-    margin: 50px;
-    margin-bottom: 0;
+    margin-right: 30px;
   }
 
   .app-info {
     width: 40%;
-    margin: 50px;
-    margin-left: 0;
-    margin-bottom: 0;
   }
 
   .container-carousel {

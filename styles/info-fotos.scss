@@ -56,8 +56,10 @@ h2 {
   }
 
   .container-info {
-    padding-left: 0;
+    padding: 0;
+    padding-right: 50px;
     justify-content: flex-start;
+
   }
 
   p, li, li::before {
@@ -66,6 +68,7 @@ h2 {
 
   h3 {
     color: $color-yellow;
+    text-align: start;
   }
 
   ul {

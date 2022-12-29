@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 import { BaseService } from 'src/app/core/base.service';
-import { extensiones } from '../../../../constants/extensiones';
+import { Indicativos, indicativosArray } from './constants/indicativos.constant';
 
 @Component({
   selector: 'app-form-info',
@@ -12,7 +12,8 @@ import { extensiones } from '../../../../constants/extensiones';
 })
 export class FormInfoComponent implements OnInit {
   formContacto!: FormGroup;
-  arrayExtensiones = extensiones;
+  arrayIndicativos: Indicativos[] = indicativosArray;
+
 
   constructor(
     private formBuilder: FormBuilder,
