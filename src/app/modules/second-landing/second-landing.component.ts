@@ -10,19 +10,15 @@ import { IMenu } from 'src/app/shared/interface/IMenu.interface';
 export class SecondLandingComponent implements OnInit {
 
   menu: IMenu[] = [{
-    href: '',
+    href: 'introduccion',
     title: 'Introducción'
   },
   {
-    href: '',
-    title: 'Beneficios'
-  },
-  {
-    href: '',
+    href: 'summary',
     title: 'VILEAN'
   },
   {
-    href: '',
+    href: 'form',
     title: 'Formulario'
   },
   {

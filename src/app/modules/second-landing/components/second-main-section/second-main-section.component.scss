@@ -3,7 +3,7 @@
 .home{
 	position:relative;
   width:100%;
-  height: 94vh;
+  height: 100vh;
 }
 
 .content-title{
@@ -14,7 +14,7 @@
 }
 
 .slider-text{
-  padding-top: 78px;
+  padding-top: 120px;
   margin: 0 auto;
   text-align: center;
 }
@@ -55,7 +55,7 @@ mark {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 40%;
+  top: 37%;
 }
 
 .color-white {
@@ -81,10 +81,6 @@ p {
 }
 
 @media only screen and (min-width: 659px) {
-  .slider-text{
-    padding-top: 100px;
-  }
-
   .content-title {
     background: url('../../../../../assets/images/foto_portada2_escritorio.jpg') no-repeat center center;
     background-size: cover;

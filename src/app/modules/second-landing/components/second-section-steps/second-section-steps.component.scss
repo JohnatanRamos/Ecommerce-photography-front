@@ -14,3 +14,9 @@
   background: url('../../../../../assets/icons/paso3.3.png') center center no-repeat;
   background-size: 50% auto;
 }
+
+@media only screen and (min-width: 768px) {
+  .section-steps .step:first-child p{
+    max-width: 140px;
+  }
+}

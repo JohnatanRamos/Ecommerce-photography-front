@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
 import { BaseService } from 'src/app/core/base.service';
@@ -15,7 +16,8 @@ export class SidebarComponent implements OnInit {
 
   constructor(
     private primengConfig: PrimeNGConfig,
-    private baseService: BaseService
+    private baseService: BaseService,
+    private viewportScroller: ViewportScroller
   ) {}
 
   ngOnInit(): void {
@@ -27,5 +29,9 @@ export class SidebarComponent implements OnInit {
 
   handleCloseSidebar() {
     this.emitCloseSidebar.emit(false);
+  }
+
+  changeRouter(id: string) {
+    this.viewportScroller.scrollToAnchor(id);
   }
 }
