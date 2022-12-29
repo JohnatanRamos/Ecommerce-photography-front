@@ -71,7 +71,7 @@ export class FormInfoComponent implements OnInit {
     this.baseService.postMethod('users', this.formContacto.value).subscribe({
       next: () => {
         this.messageSuccess(
-          'Información enviada correctamente, te llkegará un mensaje al correo que diligenciaste'
+          'Información enviada correctamente, te llegará un mensaje al correo que diligenciaste'
         );
         this.formContacto.reset({ indicativo: "57" });
       },

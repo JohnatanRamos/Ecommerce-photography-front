@@ -4,8 +4,11 @@
   display: none;
 }
 
+
+
 @media screen and (min-width: 800px) {
   .app-button {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
   }
 }

@@ -87,13 +87,12 @@
   gap: 10px;
 
   .indicativo {
-    width: 50%!important;
+    width: 50%;
+    max-width: 50%;
   }
 
   .phone {
     width: calc(50% - 10px);
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -139,3 +138,12 @@
 ::ng-deep.ng-select .ng-select-container .ng-value-container {
   border-top: 0.59em solid transparent;
 }
+
+::ng-deep.ng-dropdown-panel.ng-select-bottom {
+  width: 330px;
+}
+
+::ng-deep.ng-dropdown-panel.ng-select-top {
+  width: 330px;
+}
+
