@@ -7,7 +7,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 100;
   background: $color-blue;
@@ -20,4 +20,12 @@ header {
   background-image: url('../../../../assets/images/logo.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.button-menu {
+  color: white;
+}
+
+.button-menu:hover {
+  color: white !important;
 }

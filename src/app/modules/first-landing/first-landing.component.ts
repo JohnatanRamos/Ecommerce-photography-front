@@ -14,10 +14,6 @@ export class FirstLandingComponent implements OnInit {
     title: 'Introducción'
   },
   {
-    href: 'benefits',
-    title: 'Beneficios'
-  },
-  {
     href: 'coursel',
     title: 'Fotos'
   },

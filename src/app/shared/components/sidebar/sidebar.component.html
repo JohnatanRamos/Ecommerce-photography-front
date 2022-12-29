@@ -8,7 +8,7 @@
         </li>
         <ng-container *ngFor="let item of menu">
           <li>
-            <a [href]="'#'+item.href" class="scroll">{{ item.title }}</a>
+            <a (click)="changeRouter(item.href)" class="scroll">{{ item.title }}</a>
           </li>
         </ng-container>
       </ul>

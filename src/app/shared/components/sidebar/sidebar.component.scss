@@ -1,9 +1,11 @@
+@import "/src/styles.scss";
+
 :host ::ng-deep button {
   margin-right: .25em;
 }
 
 ::ng-deep.p-sidebar {
-  background-color: #6D6E71;
+  background-color: $color-blue;
 }
 
 ::ng-deep.pi-times:before {
