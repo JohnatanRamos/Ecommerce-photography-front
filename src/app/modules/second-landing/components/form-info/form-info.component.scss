@@ -49,6 +49,7 @@
     .error {
       color: red;
       font-size: 12px;
+      background-color: #fff;
     }
 
     .input-error {
@@ -86,11 +87,11 @@
   gap: 10px;
 
   .indicativo {
-    width: 30%!important;
+    width: 50%!important;
   }
 
   .phone {
-    width: calc(70% - 10px);
+    width: calc(50% - 10px);
     display: flex;
     flex-direction: column;
   }
@@ -124,4 +125,21 @@
       font-size: 15px;
     }
   }
+}
+
+::ng-deep.ng-select .ng-select-container::after {
+  border-bottom: none;
+  padding-bottom: 15px;
+}
+
+::ng-deep.ng-select span {
+  color: $color-gray;
+}
+
+::ng-deep.ng-select .ng-select-container .ng-value-container {
+  padding: 0;
+}
+
+::ng-deep.ng-select .ng-select-container .ng-value-container {
+  border-top: 0.59em solid transparent;
 }

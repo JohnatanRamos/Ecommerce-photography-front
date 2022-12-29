@@ -15,6 +15,7 @@ import { FormInfoComponent } from './components/form-info/form-info.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrimeNgModule } from 'src/app/shared/prime-ng/prime-ng.module';
 import { InfoCursoCompletoComponent } from './components/info-curso-completo/info-curso-completo.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { InfoCursoCompletoComponent } from './components/info-curso-completo/inf
     SharedModule,
     FormsModule,
     ReactiveFormsModule,
-    PrimeNgModule
+    PrimeNgModule,
+    NgSelectModule
   ]
 })
 export class SecondLandingModule { }

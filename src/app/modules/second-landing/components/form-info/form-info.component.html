@@ -27,18 +27,23 @@
 
       <div class="form-col">
         <div class="celular">
-          <input
+          <ng-select
             class="form-input indicativo"
             formControlName="indicativo"
-            type="text"
-            placeholder="Indic."
             [ngClass]="{ 'input-error': validateInput('indicativo') }"
-          />
+          >
+            <ng-option
+              *ngFor="let item of arrayIndicativos"
+              [value]="item.phone_code"
+              [title]="'(+' + item.phone_code + ') ' + item.nombre"
+              >(+{{ item.phone_code }}) {{ item.nombre }}</ng-option
+            >
+          </ng-select>
 
           <input
             class="form-input phone"
             formControlName="celular"
-            type="number"
+            type="text"
             placeholder="Celular"
             [ngClass]="{ 'input-error': validateInput('celular') }"
           />

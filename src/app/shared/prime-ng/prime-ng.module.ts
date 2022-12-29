@@ -21,7 +21,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     CardModule,
     SidebarModule,
     ToastModule,
-    ProgressSpinnerModule
+    ProgressSpinnerModule,
   ],
 })
 export class PrimeNgModule {}
