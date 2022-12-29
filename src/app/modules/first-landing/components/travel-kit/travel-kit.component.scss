@@ -21,7 +21,7 @@ section p:nth-child(3) {
 
   a {
     justify-content: center;
-    width: 261px;
+    width: 300px;
     height: 40px;
     align-self: center;
     border-radius: 25px;
@@ -34,20 +34,9 @@ section p:nth-child(3) {
     letter-spacing: 1px;
     font-size: 20px;
   }
-
-
 }
 
 @media only screen and (min-width: 800px) {
-  .buy-button {
-    width: 390px;
-    margin: 0 auto;
-    margin-top: 30px;
-
-    a {
-      width: 100%;
-    }
-  }
 
   section p:nth-child(3) {
     max-width: 400px;
