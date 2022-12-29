@@ -73,6 +73,7 @@ export class FormInfoComponent implements OnInit {
         this.messageSuccess(
           'Información enviada correctamente, te llkegará un mensaje al correo que diligenciaste'
         );
+        this.formContacto.reset({ indicativo: "57" });
       },
       error: (err) => {
         this.messageError(err.message)
